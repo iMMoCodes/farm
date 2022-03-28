@@ -1,7 +1,7 @@
-package com.farm;
+package com.farm.animals;
 
 public class Dog extends Animal {
-    String breed;
+    private String breed;
 
     public Dog(String name, String favoriteFood, String bestFriendForever, String breed) {
         super(name, favoriteFood, bestFriendForever);
@@ -10,10 +10,8 @@ public class Dog extends Animal {
 
     @Override
     public String toString() {
-        return "Dog\nName= " + name +
-                "\nFavorite Food= " + favoriteFood +
-                "\nBest Friend Forever= " + bestFriendForever +
-                "\nbreed= " + breed +
+        return "Dog" + super.toString() +
+                "breed = " + breed +
                 "\n";
     }
 }
